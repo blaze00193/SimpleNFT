@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract YourCollectible is
+contract SAGGIO is
 	ERC721,
 	ERC721Enumerable,
 	ERC721URIStorage,
@@ -17,7 +17,7 @@ contract YourCollectible is
 
 	Counters.Counter public tokenIdCounter;
 
-	constructor() ERC721("YourCollectible", "YCB") {}
+	constructor() ERC721("SAGGIO", "SG") {}
 
 	function _baseURI() internal pure override returns (string memory) {
 		return "https://ipfs.io/ipfs/";
